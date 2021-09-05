@@ -14,14 +14,15 @@ class TestUser(unittest.TestCase):
     	'''
     	self.new_user = User('Peter','An\'am\'i','pswd100')
 
-  def test_init_(self):
-    	'''
-    	Test to if check the creation of user instances is properly done
-    	'''
-    	self.assertEqual(self.new_user.first_name,'Peter')
-    	self.assertEqual(self.new_user.last_name,'An\'am\'i')
-    	self.assertEqual(self.new_user.password,'pswd100')
-  	def test_save_user(self):
+  	def test__init__(self):
+			'''
+			Test to if check the initialization/creation of user instances is properly done
+			'''
+		self.assertEqual(self.new_user.first_name,'Peter')
+		self.assertEqual(self.new_user.last_name,'An\'am\'i')
+		self.assertEqual(self.new_user.password,'pswd100')
+  	
+		def test_save_user(self):
     	'''
     	Test to chake if the new users info is saved into the users list
     	'''
