@@ -33,7 +33,7 @@ class Credential:
   credentials_list =[]
   user_credentials_list =[]
   @classmethod
-  def check_user (Class,first_name,password):
+  def check_user (cls,first_name,password):
     '''
     Method that checks if the name and password entered matches the entries in users_list
     '''
@@ -53,7 +53,7 @@ class Credential:
     self.account_name = account_name
     self.password = password
 
-  def save_credentials(self)
+  def save_credentials(self):
     '''
     Function to create a newly created user instance
     '''
