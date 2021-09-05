@@ -13,8 +13,8 @@ class TestUser(unittest.TestCase):
     	Function to create a user account before each test
     	'''
     	self.new_user = User('Peter','An\'am\'i','pswd100')
-  	
-		def test_init_(self):
+
+  def test_init_(self):
     	'''
     	Test to if check the creation of user instances is properly done
     	'''
